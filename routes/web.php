@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BiodataController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,5 @@ Route::get('biodata', function() {
 });
 
 Route::get('biodata/controller/{id}', [BiodataController::class, 'index']); 
+
+Route::get('profile', [ProfileController::class, 'index']);
